@@ -1,0 +1,32 @@
+{
+  "env": {
+    "browser": false,
+    "es6": true,
+    "jest": true
+  },
+  "extends": "airbnb-base/legacy",
+  "globals": {
+    "Atomics": "readonly",
+    "SharedArrayBuffer": "readonly"
+  },
+  "parserOptions": {
+    "sourceType": "module",
+    "ecmaVersion": 2018,
+    "ecmaFeatures": {
+      "impliedStrict": true
+    }
+  },
+  "rules": {
+    "id-length": ["warn"],
+    "max-len": ["error", {
+      "code": 130,
+      "ignoreTrailingComments": true,
+      "ignoreStrings": true,
+      "tabWidth": 4
+    }],
+    "max-lines": ["warn", { "max": 831 }],
+    "no-console": 0,
+    "quotes": ["error", "single"],
+    "strict": 2
+  }
+}

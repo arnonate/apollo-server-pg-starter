@@ -1,0 +1,5 @@
+build/*
+public/*
+src/serviceWorker.js
+src/setupTests.js
+src/aws-exports.js
