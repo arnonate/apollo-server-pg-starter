@@ -28,13 +28,13 @@ pg_ctl -D /usr/local/var/postgres stop
 
 Create and delete local DB instance:
 ```bash
-createdb readycore
-dropdb readycore
+createdb sampledatabase
+dropdb sampledatabase
 ```
 
 Interact with DB in PostgreSQL shell:
 ```bash
-psql readycore
+psql sampledatabase
 # \list - List all of your actual databases.
 # \c dbname - Connect to another database.
 # \d - List the relations of your currently connected database.
@@ -46,7 +46,7 @@ To run the project you will need a local `.env` file with the following contents
 ```bash
 # .env
 PORT=8000
-DATABASE=readycore
+DATABASE=sampledatabase
 DATABASE_USER=username
 DATABASE_PASSWORD=username
 ```
